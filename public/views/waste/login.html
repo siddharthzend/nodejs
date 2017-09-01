@@ -1,0 +1,17 @@
+	<div class="pen-title">
+  <h1>Flat Login Form</h1>
+</div>
+	
+	
+	<div class="module form-module" ng-controller="UserController">
+  <div class="toggle"></div>
+  <div class="form">
+    <h2>Login to your account</h2>
+    <form>
+      <input type="text" placeholder="Username" ng-model="username" />
+      <input type="password" placeholder="Password" ng-model="pwd" />
+      <button  ng-click="checklogin()">Login</button>
+    </form>
+  </div>
+  <div class="cta"><a href="{{baseurl}}signup">Registration</a> | <a href="http://andytran.me">Forgot password</a></div>
+</div>

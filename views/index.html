@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-GB" xml:lang="en-GB">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<link rel="stylesheet" href="/stylesheets/videos.css">
+	<link rel="stylesheet" href="/stylesheets/image_gallery.css">
+	<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script>
+    <script src="/javascripts/module.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+	<script src="/javascripts/ng-youtube-embed.min.js"></script>
+	<script src="/javascripts/paging.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js"></script>
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="myApp">
+
+<!----start-wrap---->
+	<div class="wrap">
+		<!----start-Header---->
+		<div class="header">
+			<!----start-Logo---->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" title="logo"></a>
+			</div>
+			<!----End-Logo---->
+			<!----start-top-nav---->
+			<div class="top-nav">
+				<ul>
+					<li><a ui-sref="home">Home</a><p>My Forntpage</p></li>
+					<li><a ui-sref="about">About</a><p>About this blog</p></li>
+					<li><a href="categories.html">Categories</a><p>Be Ur Self</p></li>
+					<li><a href="#">Economics</a><p>Human Needs</p></li>
+					<li><a href="#">Health</a><p>Take A Trip</p></li>
+					<li><a href="contact.html">Contact</a><p>Leave Messages</p></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!----End-top-nav---->
+		</div>
+		<!----End-Header---->
+		<div class="clear"> </div>
+
+				<div ui-view></div>
+
+<div class="clear"> </div>
+		</div>
+		<div class="footer">
+				<div class="wrap"> 
+				<div class="box1">
+				<h4>Ur's Account</h4>
+						<ul>
+							<li><a href="#">My Channel</a></li>
+							<li><a href="#">Subscribtion</a></li>
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Favorites</a></li>
+							<li><a href="#">Add</a></li>
+							<li><a href="#">Ur-specials</a></li>
+							<li><a href="#">Submission Rules</a></li>
+						</ul>
+				</div>
+				<div class="box1">
+				<h4>Policy &amp; Terms</h4>
+						<ul>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Submission Rules</a></li>
+							<li><a href="#">Company Buzz</a></li>
+							<li><a href="#">My Staff</a></li>
+							<li><a href="#">Moodle Hosting</a></li>
+							<li><a href="#">OpenCart Hosting</a></li>
+						</ul>
+				</div>
+				<div class="box1">
+				<h4>Community</h4>
+						<ul>
+							<li><a href="#">Standard Support</a></li>
+							<li><a href="#">Premier Support</a></li>
+							<li><a href="#">Support Center</a></li>
+							<li><a href="#">Host Affiliate</a></li>
+							<li><a href="#">Infographics</a></li>
+							<li><a href="#">indian Hosting</a></li>
+							<li><a href="#">Green Web Hosting</a></li>
+						</ul>
+				</div>
+				<div class="box1">
+					<div class="hide-box">
+				<h4>About Us</h4>
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Guarantee</a></li>
+							<li><a href="#">Link to Us</a></li>
+							<li><a href="#">We're Hiring</a></li>
+						</ul>
+				</div>
+					</div>
+				<div class="box1">
+				<h4>Stay in touch on</h4>
+						<ul class="social">
+							<li><img src="images/facebook.png" title="facebook"><a href="#">Facebook</a></li>
+							<li><img src="images/twitter.png" title="twitter"><a href="#">Twitter</a></li>
+							<li><img src="images/gplus.png" title="google+"><a href="#">Google+</a></li>
+						</ul>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+			<div class="clear"> </div>
+			<div class="copy-right">
+			<p>© 2013 All rights Reserved | Design by &nbsp;<a href="http://w3layouts.com">W3Layouts</a></p>
+		</div>
+	
+	<!----End-wrap---->
+	<script src="/javascripts/UserController.js"></script>
+</body>
+</html>

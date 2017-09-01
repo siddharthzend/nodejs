@@ -1,0 +1,95 @@
+<div class="content" ng-controller="UserController as vm">
+			<div class="left-content">
+				<div class="searchbar">
+					<div class="search-left">
+						<p>{{photos[0].my_title}}</p>
+					</div>
+					<div class="search-right">
+						<form>
+							<input type="text"><input type="submit" value="">
+						</form>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<div class="box">
+				<div class="grids">
+					<div>
+						Tags : {{photos[0].my_tags}}
+						{{photos[0].my_desc}}
+						<h3><a href="{{singlevideo.url}}" title="{{singlevideo.title}}">{{singlevideo.title}}</a></h3>
+						<!-- slider container -->
+						<div class="container slider">
+						<!-- enumerate all photos -->
+						<img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" style="width: 100%;height: 500px;"  />
+						<!-- prev / next controls -->
+						<a class="arrow prev" href="javascript:void(0)" ng-click="showPrev()">Previous</a>
+						<a class="arrow next" href="javascript:void(0)" ng-click="showNext()">Next</a>
+						<!-- extra navigation controls -->
+						<!--ul class="nav">
+						<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+						<img src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
+						</li>
+						</ul-->
+						</div>
+ 					</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<div class="clear"> </div>
+			
+
+			
+			<div class="clear"> </div>
+		</div>
+		<div class="right-content">
+			<div class="popular">
+				<h3>Popular Videos</h3>
+				<p><img src="images/l1.png" title="likes"> 10,000</p>
+				<div class="clear"> </div>
+			</div>
+			<div class="grid1">
+						<h3>Consectetur adipisicing elit</h3>
+						<a href="#"><img src="images/g7.jpg" title="video-name"></a>
+						<div class="time1">
+							<span>2:50</span>
+						</div>
+						
+						<div class="grid-info">
+							<div class="video-share">
+								<ul>
+									<li><a href="#"><img src="images/likes.png" title="links"></a></li>
+									<li><a href="#"><img src="images/link.png" title="Link"></a></li>
+									<li><a href="#"><img src="images/views.png" title="Views"></a></li>
+								</ul>
+							</div>
+							<div class="video-watch">
+								<a href="#">Watch Now</a>
+							</div>
+							<div class="clear"> </div>
+							<div class="lables">
+								<p>Labels:<a href="#">Lorem</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="clear"> </div>
+					<div class="Recent-Vodeos">
+						<h3>Recent-Videos</h3>
+						<div class="video1">
+							<img src="images/r1.jpg" title="video2">
+							<span>Lorem ipsum dolor sit amet,</span>
+							<p>s consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div class="clear"> </div>
+						</div>
+						<div class="video1 video2">
+							<img src="images/r2.jpg" title="video2">
+							<span>Lorem ipsum dolor sit amet,</span>
+							<p>s consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div class="clear"> </div>
+						</div>
+						<div class="r-all">
+							<a href="#">View All</a>
+						</div>
+					</div>
+		</div>
+		<div class="clear"> </div>
+		</div>
